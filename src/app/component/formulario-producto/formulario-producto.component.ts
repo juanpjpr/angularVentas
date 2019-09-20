@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Producto } from 'src/app/interfaces/producto';
 import { ProductosService } from 'src/app/productos.service';
@@ -9,11 +9,17 @@ import { ProductosService } from 'src/app/productos.service';
   styleUrls: ['./formulario-producto.component.css']
 })
 export class FormularioProductoComponent implements OnInit {
- 
-  constructor(private productos: ProductosService) { }
+ @Output() valor = new EventEmitter();
 
+  constructor(private productos: ProductosService) {
+
+   }
   ngOnInit() {
   }
+
+  valorEmitido() {
+     this.valor.emit(false);
+      }
 
   accion(form: NgForm) {
     const p: Producto = {
@@ -23,6 +29,8 @@ export class FormularioProductoComponent implements OnInit {
     this.productos.agregar(p);
     form.value.descripcion = '';
     form.value.pu = '';
-  }
+   }
+
+ 
 
 }

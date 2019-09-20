@@ -6,11 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./productos.component.css']
 })
 export class ProductosComponent implements OnInit {
-  formularioProductos: Boolean = false;
-
+  formularioProductos: boolean = false;
+  
   constructor() { }
 
   ngOnInit() {
   }
 
+  recibir(valor) {
+    this.formularioProductos = valor;
+  }
 }

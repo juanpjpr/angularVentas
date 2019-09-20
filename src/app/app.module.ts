@@ -1,9 +1,10 @@
-import { BrowserModule } from "@angular/platform-browser";
-import { NgModule } from "@angular/core";
-import { ReactiveFormsModule, FormsModule } from "@angular/forms";
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
-import { AppRoutingModule } from "./app-routing.module";
-import { AppComponent } from "./app.component";
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
 import { MarcoComponent } from './marco/marco.component';
 import { VentasComponent } from './component/ventas/ventas.component';
 import { ProductosComponent } from './component/productos/productos.component';

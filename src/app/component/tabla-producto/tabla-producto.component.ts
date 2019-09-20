@@ -25,4 +25,9 @@ producs: Producto[] = [];
   delete(pos: number) {
     this.productos.delete(pos);
   }
+
+  editar(pos: number) {
+    this.productos.productos[pos].descripcion = prompt('Descripcion');
+    this.productos.productos[pos].pu = prompt('Pu');
+  }
 }
