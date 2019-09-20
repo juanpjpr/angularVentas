@@ -1,0 +1,50 @@
+<div class="container">
+    <nav>
+        <div class="nav-wrapper teal lighten-4">
+            <a href="#" class="brand-logo center">Aplicacion</a>
+
+        </div>
+    </nav>
+    <div class="row ">
+        <div class="col s12 m4 l3">
+            <div class="collection">
+                <a routerLink="/home" routerLinkActive="active" class="collection-item">Home</a>
+                <a routerLink="/ventas" routerLinkActive="active" class="collection-item">Ventas</a>
+                <a routerLink="/productos" routerLinkActive="active" class="collection-item">Productos</a>
+                <a routerLink="/estadisticas" routerLinkActive="active" class="collection-item">Estadisticas</a>
+            </div>
+        </div>
+
+        <div class="col s12 m8 l9">
+            <div class="container">
+                <router-outlet>
+                </router-outlet>
+            </div>
+        </div>
+
+    </div>
+    <footer class="page-footer teal lighten-4">
+        <div class="container teal lighten-2">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Primer Proyecto</h5>
+
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a routerLink="/home" routerLinkActive="active" class="grey-text text-lighten-3">Home</a></li>
+                        <li><a routerLink="/productos" routerLinkActive="active" class="grey-text text-lighten-3">Productos</a></li>
+                        <li><a routerLink="/ventas" routerLinkActive="active" class="grey-text text-lighten-3">Ventas</a></li>
+                        <li><a routerLink="/estadisticas" routerLinkActive="active" class="grey-text text-lighten-3">Estadisticas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2019 Juan Pablo Repik
+            </div>
+        </div>
+    </footer>
+</div>

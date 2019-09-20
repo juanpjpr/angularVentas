@@ -1,0 +1,19 @@
+<table class="centered" *ngIf="producs.length!=0">
+    <thead>
+        <tr>
+            <th>Descripcion</th>
+            <th>PU</th>
+            <th>Acciones</th>
+
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let producto of producs; let i = index">
+            <td>{{producto.descripcion}}</td>
+            <td>{{producto.pu}}</td>
+            <td><a (click)="tabla()" class="btn-floating btn-small waves-effect waves-light    green lighten-3"><i class="material-icons">edit</i></a>
+                <a (click)="delete(i)" class=" btn-floating btn-small waves-effect waves-light  red lighten-3"><i class="material-icons ">delete</i></a></td>
+        </tr>
+    </tbody>
+</table>

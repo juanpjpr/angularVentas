@@ -1,0 +1,7 @@
+<div class="container">
+    <a *ngIf="formularioProductos==false" class="btn-floating btn-large waves-effect waves-light teal lighten-2" (click)="formularioProductos=!formularioProductos">
+        <i class="material-icons">add</i>
+    </a>
+    <app-formulario-producto *ngIf="formularioProductos==true"></app-formulario-producto>
+    <app-tabla-producto></app-tabla-producto>
+</div>
